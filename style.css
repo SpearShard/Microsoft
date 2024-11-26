@@ -1,0 +1,179 @@
+ @font-face {
+    font-family: 'Clash';
+    src: url('./ClashDisplay-Semibold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Stencil';
+    src: url('./BespokeStencil-Extrabold.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Panchang';
+    src: url('./Panchang-Extrabold.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --vh:1vh;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    height: calc(var(--vh, 1vh)*100);
+    overflow:hidden;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.left{
+    background-color: #03243e;
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    width: 40vw;
+    border-top-left-radius: 2rem; 
+    border-bottom-left-radius: 2rem; 
+}
+.right{
+    background-color: #03243e;
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    width: 40vw;
+    border-top-right-radius: 2rem; 
+    border-bottom-right-radius: 2rem; 
+}
+.right a:nth-of-type(1){
+    padding-left: 30rem;
+}
+
+.PNG{
+    position: absolute;
+    top: 14rem;
+    left: 32.7rem;
+    z-index: 2;
+
+}
+
+.heading h1 {
+    position: absolute;
+    font-family: 'Panchang';
+    font-size: 7.5rem;
+    top: 25rem;
+    left: 4rem;
+}
+.heading h1:nth-of-type(1) {
+    position: absolute;
+    font-family: 'Panchang';
+    font-size: 7.5rem;
+    top: 15rem;
+    left: 12rem;
+}
+.heading h2 {
+    position: absolute;
+    font-family: 'Stencil';
+    font-size: 2.5rem;
+    top: 26rem;
+    left: 37rem;
+}
+
+.square{
+    position: absolute;
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 50rem;
+    top: 0.2rem;
+    left: 45.1rem;
+    z-index: 1;
+    content: fit;
+    background: linear-gradient(to bottom, #104CC8, #1258D2);
+    
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin-top: 1.75rem; 
+    gap: 0;
+    row-gap: 2rem; 
+  }
+  
+  .circle {
+    background-color: rgba(0, 0, 0, 0.1); 
+    height: 7rem; 
+    width: 7rem; 
+    border-radius: 50%; 
+    position: absolute;
+  }
+
+  
+  .upward-v,
+  .downward-v {
+    width: auto; 
+    height: auto; 
+  }
+  
+
+#main{
+    background-color: black;
+    height: auto;
+}
+
+.page1 {
+    overflow: hidden;
+    min-height: 100vh;
+    width: 100vw;
+    background: radial-gradient(circle, #1e90ff, #00008b);
+}
+
+
+.page2 {
+    min-height: 130vh;
+    width: 100vw;
+    background-color: #4682b4; 
+    z-index: 1;
+    /* position: relative; */
+}
+.page2 h1{
+    margin: 0;
+    font-family: 'Clash';
+    font-size: 7vw;
+    padding-left: 10rem;
+    padding-top: 2rem;
+}
+.page2 h2{
+    margin: 0;
+    font-family: 'Clash';
+    font-size: 7vw;
+    padding-top: 0rem;
+    padding-left: 10rem;
+    width: 100%;
+
+} 
+
+.page2 video{
+    padding-top: 7rem ;
+    width:60%;
+    position:relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.element img{
+    height:20rem;
+    width:20rem;
+}
+
+

@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Chillax';
+    src: url('./Chillax-Regular.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.page4{
+    /* background-color: blanchedalmond; */
+    min-height : 100vh;
+    width : 100%;
+    padding-top: 7rem;
+    border-top: white 0.1em solid;
+    border-radius: 2em;
+    color: bisque;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.349);
+    border: 2px dashed red;
+}
+.page5{
+    /* background-color: blanchedalmond; */
+    min-height : 100vh;
+    width : 100%;
+    padding-top: 7rem;
+    border-top: white 0.1em solid;
+    border-radius: 2em;
+    color:rgb(135, 94, 18);
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.349);
+}
+
+.element4{
+    width:50%;
+    background-color: darkcyan;
+    padding: 1rem;
+    min-height: 5rem;
+    right: 1vw;
+    margin: 0;
+    position: absolute;
+}
+
+#president{
+    /* position:absolute; */
+    height: 20vw;
+    width: 20vw;
+}
+
+.element4 h1,h2{
+    font-family: 'Chillax';
+    font-size: 8rem;
+    margin: 0;
+}
+
+.flex-container4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 100vh;
+    margin-top: 1.75rem; 
+    gap: 0;
+    row-gap: 2rem; 
+  }
+  
+  .circle4{
+    background-color: rgba(35, 170, 215, 0.1); 
+    height: 7rem; 
+    width: 7rem; 
+    border-radius: 50%; 
+    position: absolute;
+    z-index: 20;
+  }
+
+  
+  .upward-v,
+  .downward-v{
+    width: auto; 
+    height: auto;
+  }
+
+
+
+/* Media Queries for Responsiveness */
+
+/* Medium Screens (Tablets, 768px and below) */
+@media (max-width: 768px) {
+    .element4 h1 {
+        font-size: 6rem; /* Adjust font size for tablets */
+    }
+
+    .page4 {
+        padding-top: 5rem; /* Reduce padding for smaller screens */
+    }
+}
+
+/* Small Screens (Mobile Devices, 480px and below) */
+@media (max-width: 456px) {
+    .element4 h1 {
+        font-size: 2rem; /* Smaller font for mobile devices */
+    }
+
+    .page4 {
+        padding-top: 1rem;
+        border-radius: 1em; /* Slightly smaller border radius */
+    }
+
+    .element4 {
+        padding: 0.5rem; /* Reduce padding for mobile */
+    }
+}

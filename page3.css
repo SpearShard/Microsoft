@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url('./Satoshi-Light.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tanker';
+    src: url('./Tanker-Regular.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.page3 {
+    
+    padding:2rem ;
+    padding-top: 10rem;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    /* background-color: #32cd32;  */
+} 
+.element{
+    max-width: 96%;
+    /* background-color: salmon; */
+    display: flex;
+    align-items: center;
+    /* margin-top: 8rem; */
+    position: relative;
+    justify-content: center;
+}
+.element img{
+    position: absolute;
+    /* opacity: 0; */
+    scale:0;
+    /* transform-origin: center; */
+    transition: all ease-out 0.8s;
+    transform: translateY(-5%) rotate(10deg);
+
+}
+.element img:nth-of-type(1){
+    left: 2rem;
+}
+.element #sec{
+    right: 3rem;
+}
+
+.text{
+    height: 5rem;
+    overflow: hidden;
+}
+
+.element h1{
+    margin: 0;
+    font-size: 4rem;
+    font-family: 'tanker';
+    color: wheat;
+    transition: all ease-out 0.5s;
+}
+
+.element:hover h1{
+    transform: translateY(-100%);
+    color: #B75B48;
+}
+.element:hover img{
+    transform: translateY(0%) rotate(0deg);
+    /* opacity:1 */
+    scale : 1;
+}
