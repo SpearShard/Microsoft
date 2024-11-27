@@ -24,8 +24,9 @@
 body{
     margin:0;
     padding: 0;
-    height: calc(var(--vh, 1vh)*100);
+    height: 100vh;
     overflow:hidden;
+    position: relative;
     width: 100%;
 }
 
@@ -59,32 +60,39 @@ body{
 
 .PNG{
     position: absolute;
-    top: 14rem;
-    left: 32.7rem;
+    top: 50vh;
+    left: 50vw;
     z-index: 2;
+    transform: translate(-50%, -50%);
+}
 
+.heading{
+    display: flex;
+    flex-direction: column;
+}
+
+.heading h1:nth-of-type(1) {
+    position: absolute;
+    font-family: 'Panchang';
+    font-size: 7.5vw;
+    top: 20vh;
+    left: 15vw;
 }
 
 .heading h1 {
     position: absolute;
     font-family: 'Panchang';
-    font-size: 7.5rem;
-    top: 25rem;
-    left: 4rem;
+    font-size: 7.5vw;
+    top: 50vh;
+    left: 5vw;
 }
-.heading h1:nth-of-type(1) {
-    position: absolute;
-    font-family: 'Panchang';
-    font-size: 7.5rem;
-    top: 15rem;
-    left: 12rem;
-}
+
 .heading h2 {
     position: absolute;
     font-family: 'Stencil';
-    font-size: 2.5rem;
-    top: 26rem;
-    left: 37rem;
+    font-size: 2.5vw;
+    top: 50vh;
+    left: 37vw;
 }
 
 .square{
@@ -92,8 +100,8 @@ body{
     width: 6.5rem;
     height: 6.5rem;
     border-radius: 50rem;
-    top: 0.2rem;
-    left: 45.1rem;
+    top: -0.01%;
+    left: 47.3%;
     z-index: 1;
     content: fit;
     background: linear-gradient(to bottom, #104CC8, #1258D2);
@@ -134,6 +142,7 @@ body{
 
 .page1 {
     overflow: hidden;
+    position: relative;
     min-height: 100vh;
     width: 100vw;
     background: radial-gradient(circle, #1e90ff, #00008b);
